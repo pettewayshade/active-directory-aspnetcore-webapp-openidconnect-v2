@@ -140,7 +140,7 @@ To generate certificate please follow the below steps. Please do note that, belo
 
 4. Generate a pfx file:
 
-   ```openssl pkcs12 -inkey selfcert.pem -in selfcert.cert -export -out selfcert.pfx```
+   ```openssl pkcs12 -inkey selfcert.pem -in selfcert.crt -export -out selfcert.pfx```
    
 5. You will have to upload this certificate (`selfcert.crt`) on Azure Portal (See next step). Once you save this certificate, the portal will give you the thumbprint of this certificate which is needed in the acquire token call. 
 Alternatively you can use an existing certificate if you have one.
